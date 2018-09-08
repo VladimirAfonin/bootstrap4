@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="bootstrap-source/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-source/dist/css/theme.css">
+
+    <title>Welcome to bootstrap 4 stable release!</title>
+    <style>
+        .block1 {
+            background-color: green;}
+        .block2 {
+            background-color: lightcoral;}
+        .block3 {
+            background-color: lightblue;}
+        .section-1 {
+            background: url("/img/1.jpg") center;
+            -webkit-background-size: cover;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .section-1 {
+            min-height: 100vh;
+        }
+        section h2 {
+            color: #fff;
+            font-size: 40px;
+            padding: 40px;
+            background-color: rgba(0,0,0, .5);
+            box-shadow: 0 0 10px rgba(255, 255, 255, .3);
+        }
+    </style>
+</head>
+<body>
+<h1>Hello, world!</h1>
+
+<!-- колонки одинаковой ширины -->
+<!-- <div class="container">
+    <div class="row">
+        <div class="col block1">1</div>
+        <div class="col block2">2</div>
+        <div class="col block3">3</div>
+        <div class="col block2">4</div>
+        <div class="col block1">5</div>
+    </div>
+</div> -->
+
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col-md block1">1</div>-->
+        <!--<div class="col-md block2">2</div>-->
+        <!--<div class="col-md block3">3</div>-->
+        <!--<div class="col-md block2">4</div>-->
+        <!--<div class="col-md block1">5</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col block1">1</div>
+        <div class="col block2">2</div>
+        <div class="col-md-5 block3">3</div>
+        <div class="col block2">4</div>
+        <div class="col block1">5</div>
+    </div>
+</div> -->
+
+<!-- колонки одинаковой ширины с миксованием брейкпойнтов -->
+<!-- <div class="container">
+    <div class="row">
+        <div class="col col-md-8 block1">col col-md-8</div>
+        <div class="col-6 col-md-4 block2">col-6 col-md-4</div>
+    </div>
+</div> -->
+
+<!-- контент переменной ширины с центрированием -->
+<!-- <div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-md-2 block1">1</div>
+        <div class="col-12 col-md-auto block3">Lorem ipsum dolor sit amet.</div>
+        <div class="col-md-2 block2">2</div>
+    </div>
+</div> -->
+
+<!-- .w-100 для множественных рядов -->
+<!-- <div class="container">
+    <div class="row">
+        <div class="col block1">1</div>
+        <div class="col block2">2</div>
+        <div class="w-100"></div> перенос на след ряд
+        <div class="col block3">3</div>
+        <div class="col block1">4</div>
+    </div>
+</div> -->
+
+<!-- text по центру сверху картинки -->
+
+<!--<section class="section-1">-->
+    <!--<div class="container">-->
+        <!--<div class="row align-items-center justify-content-center">-->
+            <!--<div class="col-md-5 text-center">-->
+                <!--<h2>Чашка кофе</h2>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+
+
+<!-- вертикальное выравнивание ряда -->
+<!-- align-items: flex-start | center | flex-end -->
+<!-- <div class="container">
+    <div class="row mh align-items-start">
+        <div class="col block1">1</div>
+        <div class="col block2">2</div>
+        <div class="col block3">3</div>
+    </div>
+    <div class="row mh align-items-center">
+        <div class="col block1">1</div>
+        <div class="col block2">2</div>
+        <div class="col block3">3</div>
+    </div>
+    <div class="row mh align-items-end">
+        <div class="col block1">1</div>
+        <div class="col block2">2</div>
+        <div class="col block3">3</div>
+    </div>
+</div> -->
+
+<!-- вертикальное выравнивание колонок -->
+<!-- align-self: flex-start | center | flex-end -->
+<!-- <div class="container">
+    <div class="row mh">
+        <div class="col block1 align-self-start">1</div>
+        <div class="col block2 align-self-center">2</div>
+        <div class="col block3 align-self-end">3</div>
+    </div>
+</div> -->
+
+<!-- горизонтальное выравнивание -->
+<!-- justify-content: flex-start | center | flex-end -->
+<!-- <div class="container">
+    <div class="row mh justify-content-start">
+        <div class="col-3 block1">1</div>
+        <div class="col-3 block2">2</div>
+    </div>
+    <div class="row mh justify-content-center">
+        <div class="col-3 block1">1</div>
+        <div class="col-3 block2">2</div>
+    </div>
+    <div class="row mh justify-content-end">
+        <div class="col-3 block1">1</div>
+        <div class="col-3 block2">2</div>
+    </div>
+    <div class="row mh justify-content-around">
+        <div class="col-3 block1">1</div>
+        <div class="col-3 block2">2</div>
+    </div>
+    <div class="row mh justify-content-between">
+        <div class="col-3 block1">1</div>
+        <div class="col-2 block2">2</div>
+        <div class="col-2 block3">3</div>
+        <div class="col-3 block1">4</div>
+    </div>
+</div> -->
+
+<!-- flex order -->
+<!--<br>-->
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col block1 order-3">1</div>-->
+        <!--<div class="col block2 order-2">2</div>-->
+        <!--<div class="col block3 order-1">3</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!-- offsetting columns - отступы  -->
+<!--<br>-->
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col-4 block1 offset-md-2">1</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!-- order & order-sm-*  -> меняем порядок  -->
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col-md-3 order-md-1 order-2 block3">Sidebar</div>-->
+        <!--<div class="col-md-9 order-md-2 order-1 block1">Content</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!-- где скрыть а где показать -->
+<!--<div class="container">-->
+    <!--<div class="row">-->
+       <!--<div class="col block1">1</div>-->
+       <!--<div class="col block2">2</div>-->
+        <!--<div class="w-100 d-md-none"></div> &lt;!&ndash; отображение: на больших и выше не отображать &ndash;&gt;-->
+       <!--<div class="col block1">3</div>-->
+       <!--<div class="col block3">4</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!-- responsive utilities -->
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col-6">-->
+            <!-- Media object -->
+             <!--<div class="media mt-5">-->
+                <!--<img class="mr-3 d-flex" src="http://via.placeholder.com/100x100?text=avatar" alt="">-->
+                <!--<div class="media-body">-->
+                    <!--<h5>Заголовок поста</h5>-->
+                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, debitis! Ea aspernatur consequuntur quod fugiat excepturi quas debitis laboriosam eius a, aliquam sed similique delectus, deserunt error sunt, natus inventore!</p>-->
+                    <!--<p>Laboriosam hic eos blanditiis necessitatibus id quis nostrum omnis repellendus voluptas dolor eum totam magni iusto nemo exercitationem, adipisci sit doloremque dignissimos delectus? Expedita deserunt autem, aliquid totam, pariatur tempore!</p>-->
+                    <!--<p>Illo cum aliquam, pariatur ullam voluptatum quam odit obcaecati distinctio consectetur ratione! Reiciendis eum nam rerum sapiente, asperiores, culpa cupiditate quasi quo possimus nemo, repellat! Cumque eum atque quidem explicabo.</p>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!-- Nesting -->
+             <!--<div class="media mt-5">-->
+                <!--<img class="mr-3 d-flex" src="http://via.placeholder.com/100x100?text=avatar" alt="">-->
+                <!--<div class="media-body">-->
+                    <!--<h5>Заголовок поста</h5>-->
+                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, debitis! Ea aspernatur consequuntur quod fugiat excepturi quas debitis laboriosam eius a, aliquam sed similique delectus, deserunt error sunt, natus inventore!</p>-->
+                    <!--<p>Laboriosam hic eos blanditiis necessitatibus id quis nostrum omnis repellendus voluptas dolor eum totam magni iusto nemo exercitationem, adipisci sit doloremque dignissimos delectus? Expedita deserunt autem, aliquid totam, pariatur tempore!</p>-->
+                    <!--<p>Illo cum aliquam, pariatur ullam voluptatum quam odit obcaecati distinctio consectetur ratione! Reiciendis eum nam rerum sapiente, asperiores, culpa cupiditate quasi quo possimus nemo, repellat! Cumque eum atque quidem explicabo.</p>-->
+
+                    <!--<div class="media mt-5">-->
+                        <!--<img class="mr-3 d-flex" src="http://via.placeholder.com/100x100?text=avatar" alt="">-->
+                        <!--<div class="media-body">-->
+                            <!--<h5>Заголовок поста</h5>-->
+                            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, debitis! Ea aspernatur consequuntur quod fugiat excepturi quas debitis laboriosam eius a, aliquam sed similique delectus, deserunt error sunt, natus inventore!</p>-->
+                            <!--<p>Laboriosam hic eos blanditiis necessitatibus id quis nostrum omnis repellendus voluptas dolor eum totam magni iusto nemo exercitationem, adipisci sit doloremque dignissimos delectus? Expedita deserunt autem, aliquid totam, pariatur tempore!</p>-->
+                            <!--<p>Illo cum aliquam, pariatur ullam voluptatum quam odit obcaecati distinctio consectetur ratione! Reiciendis eum nam rerum sapiente, asperiores, culpa cupiditate quasi quo possimus nemo, repellat! Cumque eum atque quidem explicabo.</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!-- Nesting -->
+             <!--<div class="media mt-5">-->
+                <!--&lt;!&ndash;align-self-start | align-self-center | align-self-end&ndash;&gt;-->
+                <!--<img class="mr-3  align-self-center" src="http://via.placeholder.com/100x100?text=avatar" alt="">-->
+                <!--<div class="media-body">-->
+                    <!--<h5>Заголовок поста</h5>-->
+                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, debitis! Ea aspernatur consequuntur quod fugiat excepturi quas debitis laboriosam eius a, aliquam sed similique delectus, deserunt error sunt, natus inventore!</p>-->
+                    <!--<p>Laboriosam hic eos blanditiis necessitatibus id quis nostrum omnis repellendus voluptas dolor eum totam magni iusto nemo exercitationem, adipisci sit doloremque dignissimos delectus? Expedita deserunt autem, aliquid totam, pariatur tempore!</p>-->
+                    <!--<p>Illo cum aliquam, pariatur ullam voluptatum quam odit obcaecati distinctio consectetur ratione! Reiciendis eum nam rerum sapiente, asperiores, culpa cupiditate quasi quo possimus nemo, repellat! Cumque eum atque quidem explicabo.</p>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!-- Order -->
+            <!-- <div class="media mt-5">
+                <div class="media-body">
+                    <h5>Заголовок поста</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, debitis! Ea aspernatur consequuntur quod fugiat excepturi quas debitis laboriosam eius a, aliquam sed similique delectus, deserunt error sunt, natus inventore!</p>
+                    <p>Laboriosam hic eos blanditiis necessitatibus id quis nostrum omnis repellendus voluptas dolor eum totam magni iusto nemo exercitationem, adipisci sit doloremque dignissimos delectus? Expedita deserunt autem, aliquid totam, pariatur tempore!</p>
+                    <p>Illo cum aliquam, pariatur ullam voluptatum quam odit obcaecati distinctio consectetur ratione! Reiciendis eum nam rerum sapiente, asperiores, culpa cupiditate quasi quo possimus nemo, repellat! Cumque eum atque quidem explicabo.</p>
+                </div>
+                <img class="ml-3 d-flex" src="http://via.placeholder.com/100x100?text=avatar" alt="">
+            </div> -->
+            <!-- <div class="media mt-5">
+                <img class="ml-3 d-flex order-2" src="http://via.placeholder.com/100x100?text=avatar" alt="">
+                <div class="media-body order-1">
+                    <h5>Заголовок поста</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, debitis! Ea aspernatur consequuntur quod fugiat excepturi quas debitis laboriosam eius a, aliquam sed similique delectus, deserunt error sunt, natus inventore!</p>
+                    <p>Laboriosam hic eos blanditiis necessitatibus id quis nostrum omnis repellendus voluptas dolor eum totam magni iusto nemo exercitationem, adipisci sit doloremque dignissimos delectus? Expedita deserunt autem, aliquid totam, pariatur tempore!</p>
+                    <p>Illo cum aliquam, pariatur ullam voluptatum quam odit obcaecati distinctio consectetur ratione! Reiciendis eum nam rerum sapiente, asperiores, culpa cupiditate quasi quo possimus nemo, repellat! Cumque eum atque quidem explicabo.</p>
+                </div>
+            </div> -->
+
+            <!-- Media list -->
+            <!--<ul class="list-unstyled mt-5">-->
+                <!--<li class="media">-->
+                    <!--<img class="mr-3 d-flex" src="http://via.placeholder.com/100x100?text=avatar" alt="">-->
+                    <!--<div class="media-body">-->
+                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, debitis! Ea aspernatur consequuntur quod fugiat excepturi quas debitis laboriosam eius a, aliquam sed similique delectus, deserunt error sunt, natus inventore!</p>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="media my-3">-->
+                    <!--<img class="mr-3 d-flex" src="http://via.placeholder.com/100x100?text=avatar" alt="">-->
+                    <!--<div class="media-body">-->
+                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, debitis! Ea aspernatur consequuntur quod fugiat excepturi quas debitis laboriosam eius a, aliquam sed similique delectus, deserunt error sunt, natus inventore!</p>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="media my-3">-->
+                    <!--<img class="mr-3 d-flex" src="http://via.placeholder.com/100x100?text=avatar" alt="">-->
+                    <!--<div class="media-body">-->
+                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, debitis! Ea aspernatur consequuntur quod fugiat excepturi quas debitis laboriosam eius a, aliquam sed similique delectus, deserunt error sunt, natus inventore!</p>-->
+                    <!--</div>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!-- responsive utilities -->
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--&lt;!&ndash;<div class="mt-3 col-8 mx-auto">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="embed-responsive embed-responsive-16by9">&ndash;&gt;-->
+        <!--&lt;!&ndash;<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Vl0buSQzFzo" allowfullscreen></iframe>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--<div class="col mt-3">-->
+            <!--<img class="img-fluid" src="http://via.placeholder.com/1000x300" alt="">-->
+            <!--<img class="img-fluid img-thumbnail float-left mr-3 mt-2 rounded-0" src="http://via.placeholder.com/100x100"-->
+                 <!--alt="">-->
+            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi autem consequatur sint, odio facilis odit-->
+                <!--veniam magnam porro, nostrum voluptas maxime quo placeat, excepturi molestias dignissimos! Ipsa-->
+                <!--voluptatum cumque possimus.</p>-->
+            <!--<p>Magni deleniti, cum culpa accusamus quidem soluta possimus laudantium. Pariatur tempore numquam officiis-->
+                <!--quasi laborum enim impedit odio voluptatem, culpa maxime doloribus nam suscipit est at voluptatibus.-->
+                <!--Corrupti, dolore saepe.</p>-->
+            <!--<p>Corrupti perspiciatis molestias repudiandae eum corporis possimus quia consequuntur atque repellat minus,-->
+                <!--quod esse et voluptatibus quo quasi sunt, rem ea tempore libero error doloribus nihil. Non, accusantium-->
+                <!--ab ratione.</p>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+<!-- responsive utilities -->
+<div class="container">
+    <div class="row">
+        <div class="mt-3 col">
+            <table class="table table-striped table-sm table-hover table-bordered table-dark table-responsive">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Text</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John</td>
+                    <td>john@gmail.com</td>
+                    <td>20</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut labore amet veritatis natus in
+                        alias iure quidem laudantium eum culpa.
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane</td>
+                    <td>jane@gmail.com</td>
+                    <td>20</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut labore amet veritatis natus in
+                        alias iure quidem laudantium eum culpa.
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mike</td>
+                    <td>mike@gmail.com</td>
+                    <td>20</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut labore amet veritatis natus in
+                        alias iure quidem laudantium eum culpa.
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Jake</td>
+                    <td>jake@gmail.com</td>
+                    <td>20</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut labore amet veritatis natus in
+                        alias iure quidem laudantium eum culpa.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                     aria-valuenow="75"
+                     aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<!-- кнопки модальные окна и тд -->
+<!-- responsive utilities -->
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-12">
+            <button class="btn btn-primary">Кнопка</button>
+            <button class="btn btn-primary active" disabled>Кнопка</button>
+            <button class="btn btn-outline-success">Кнопка</button>
+            <button class="btn btn-info btn-lg">Кнопка</button>
+            <button class="btn btn-danger btn-sm">Кнопка</button>
+            <a href="#" class="btn btn-warning" role="button">Ссылка</a>
+            <button class="btn btn-danger btn-block">Кнопка</button>
+
+            <hr>
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">Left</button>
+                <button type="button" class="btn btn-secondary">Middle</button>
+                <button type="button" class="btn btn-secondary">Right</button>
+            </div>
+
+            <div class="btn-group btn-group-vertical" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">Left</button>
+                <button type="button" class="btn btn-secondary">Middle</button>
+                <button type="button" class="btn btn-secondary">Right</button>
+            </div>
+
+            <hr>
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-secondary">
+                    <input type="checkbox" id="check1"> Checkbox 1
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="checkbox" id="check2"> Checkbox 2
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="checkbox" id="check3"> Checkbox 3
+                </label>
+            </div>
+
+            <hr>
+            <div class="btn-group">
+                <button class="btn btn-primary">Dropdown</button>
+                <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+                <div class="dropdown-menu dropdown-menu-left">
+                    <a href="#" class="dropdown-item">Link 1</a>
+                    <a href="#" class="dropdown-item">Link 2</a>
+                    <a href="#" class="dropdown-item">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<!-- карточки товаров -->
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-sm-4 my-3">
+            <div class="card">
+                <img class="card-img-top" src="http://via.placeholder.com/300x200" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Product title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, hic nam eaque odit libero optio.</p>
+                    <a href="#" class="card-link">About...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-3">
+            <div class="card">
+                <img class="card-img-top" src="http://via.placeholder.com/300x200" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Product title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, hic nam eaque odit libero optio.</p>
+                    <a href="#" class="card-link">About...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-3">
+            <div class="card">
+                <img class="card-img-top" src="http://via.placeholder.com/300x200" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Product title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, hic nam eaque odit libero optio.</p>
+                    <a href="#" class="card-link">About...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col-12">
+            <div class="card my-3">
+                <h4 class="card-header">Post title</h4>
+                <div class="card-body">
+                    <img class="img-thumbnail float-left mr-3" src="http://via.placeholder.com/100x100" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nisi, maxime quae ad adipisci sequi in sint repellendus esse inventore nulla consectetur numquam rerum possimus dolores nam voluptates alias velit, iste! Incidunt perferendis et iure, tenetur quia quisquam officia. Soluta?</p>
+                    <p>Eum nesciunt id iste culpa ipsa tempora! Consequatur voluptatem recusandae tempore alias id consectetur eos voluptatum deleniti! Architecto eveniet nam assumenda error quisquam, soluta a quis harum recusandae magni enim, fugit aliquid hic aspernatur ipsa adipisci iure inventore modi maxime.</p>
+                    <p>Ullam quos iure, beatae voluptates, sint saepe nobis ipsum, a fugit iste animi quae. Quis harum, temporibus officiis voluptatibus debitis voluptas modi a at, perferendis dicta nemo laborum voluptate sapiente quae aliquam, qui eveniet obcaecati molestiae quia odit. Sit, dolore!</p>
+                    <p>Repellendus suscipit et aliquam ad in. Voluptatum maiores nesciunt eos nisi, mollitia pariatur officiis, aperiam omnis itaque iste ut saepe exercitationem amet rerum! Quaerat sunt sequi, corporis architecto repellendus, quasi molestias sapiente iste ducimus a placeat amet doloribus modi atque?</p>
+                    <a href="#" class="btn btn-primary float-right">Read more...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="card my-3">
+                <h4 class="card-header">Post title</h4>
+                <div class="card-body">
+                    <img class="img-thumbnail float-left mr-3" src="http://via.placeholder.com/100x100" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nisi, maxime quae ad adipisci sequi in sint repellendus esse inventore nulla consectetur numquam rerum possimus dolores nam voluptates alias velit, iste! Incidunt perferendis et iure, tenetur quia quisquam officia. Soluta?</p>
+                    <p>Eum nesciunt id iste culpa ipsa tempora! Consequatur voluptatem recusandae tempore alias id consectetur eos voluptatum deleniti! Architecto eveniet nam assumenda error quisquam, soluta a quis harum recusandae magni enim, fugit aliquid hic aspernatur ipsa adipisci iure inventore modi maxime.</p>
+                    <p>Ullam quos iure, beatae voluptates, sint saepe nobis ipsum, a fugit iste animi quae. Quis harum, temporibus officiis voluptatibus debitis voluptas modi a at, perferendis dicta nemo laborum voluptate sapiente quae aliquam, qui eveniet obcaecati molestiae quia odit. Sit, dolore!</p>
+                    <p>Repellendus suscipit et aliquam ad in. Voluptatum maiores nesciunt eos nisi, mollitia pariatur officiis, aperiam omnis itaque iste ut saepe exercitationem amet rerum! Quaerat sunt sequi, corporis architecto repellendus, quasi molestias sapiente iste ducimus a placeat amet doloribus modi atque?</p>
+                    <a href="#" class="btn btn-primary float-right">Read more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br/>
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-12">
+            <button class="btn btn-success" data-toggle="modal" data-target="#myModal">Open modal</button>
+            <button id="open" class="btn btn-success">Open modal 2</button>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal Title</h5>
+                            <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni hic quia reprehenderit, similique aliquam aut. Iusto porro illum quaerat harum!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<!--<script src="js/bootstrap.min.js"></script>-->
+<script src="bootstrap-source/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
